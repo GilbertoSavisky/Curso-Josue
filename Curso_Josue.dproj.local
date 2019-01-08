@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/07/25 21:32:57.000.667,=C:\Users\gilbe\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/07/25 21:33:51.000.159,C:\Users\gilbe\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\gilbe\Developer\Programação\Curso Josue\unt_principal.pas</Transaction>
+    <Transaction>2018/07/25 21:33:51.000.160,C:\Users\gilbe\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\gilbe\Developer\Programação\Curso Josue\unt_principal.dfm</Transaction>
+    <Transaction>2018/07/25 21:34:07.000.990,C:\Users\gilbe\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\gilbe\Developer\Programação\Curso Josue\Curso_Josue.dproj</Transaction>
+    <Transaction>2018/07/25 21:34:22.000.704,=C:\Users\gilbe\Developer\Programação\Curso Josue\Unit1.pas</Transaction>
+    <Transaction>2018/07/25 21:34:46.000.683,C:\Users\gilbe\Developer\Programação\Curso Josue\Unit1.dfm=C:\Users\gilbe\Developer\Programação\Curso Josue\unt_DM.dfm</Transaction>
+    <Transaction>2018/07/25 21:34:46.000.683,C:\Users\gilbe\Developer\Programação\Curso Josue\Unit1.pas=C:\Users\gilbe\Developer\Programação\Curso Josue\unt_DM.pas</Transaction>
+    <Transaction>2018/07/25 21:47:09.000.351,=C:\Users\gilbe\Developer\Programação\Curso Josue\Unit1.pas</Transaction>
+    <Transaction>2018/07/25 21:47:52.000.225,C:\Users\gilbe\Developer\Programação\Curso Josue\Unit1.pas=C:\Users\gilbe\Developer\Programação\Curso Josue\unt_biblioteca.pas</Transaction>
+    <Transaction>2018/08/02 10:50:52.000.243,=C:\Users\gilbe\Developer\Programação\Curso Josue\ufrm_config_banco.pas</Transaction>
+    <Transaction>2018/08/02 12:32:45.000.976,=C:\Users\gilbe\Developer\Programação\Curso Josue\Unit2.pas</Transaction>
+    <Transaction>2018/08/02 12:34:30.000.451,C:\Users\gilbe\Developer\Programação\Curso Josue\Unit2.dfm=C:\Users\gilbe\Developer\Programação\Curso Josue\ufrm_Cadastro_Pai.dfm</Transaction>
+    <Transaction>2018/08/02 12:34:30.000.451,C:\Users\gilbe\Developer\Programação\Curso Josue\Unit2.pas=C:\Users\gilbe\Developer\Programação\Curso Josue\ufrm_Cadastro_Pai.pas</Transaction>
+    <Transaction>2018/08/02 13:38:08.000.882,=C:\Users\gilbe\Developer\Programação\Curso Josue\Unit1.pas</Transaction>
+    <Transaction>2018/08/02 13:40:59.000.099,C:\Users\gilbe\Developer\Programação\Curso Josue\Unit1.dfm=C:\Users\gilbe\Developer\Programação\Curso Josue\ufrm_cadastro_cliente.dfm</Transaction>
+    <Transaction>2018/08/02 13:40:59.000.099,C:\Users\gilbe\Developer\Programação\Curso Josue\Unit1.pas=C:\Users\gilbe\Developer\Programação\Curso Josue\ufrm_cadastro_cliente.pas</Transaction>
+    <Transaction>2018/08/02 14:29:18.000.854,=C:\Users\gilbe\Developer\Programação\Curso Josue\Unit1.pas</Transaction>
+    <Transaction>2018/08/02 14:29:54.000.176,C:\Users\gilbe\Developer\Programação\Curso Josue\Unit1.dfm=C:\Users\gilbe\Developer\Programação\Curso Josue\ufrm_cadastro_cliente2.dfm</Transaction>
+    <Transaction>2018/08/02 14:29:54.000.176,C:\Users\gilbe\Developer\Programação\Curso Josue\Unit1.pas=C:\Users\gilbe\Developer\Programação\Curso Josue\ufrm_cadastro_cliente2.pas</Transaction>
+  </Transactions>
+</BorlandProject>

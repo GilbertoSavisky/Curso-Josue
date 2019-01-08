@@ -1,0 +1,81 @@
+object frm_cadastro_pai: Tfrm_cadastro_pai
+  Left = 0
+  Top = 0
+  BorderStyle = bsSingle
+  ClientHeight = 488
+  ClientWidth = 872
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object pnl_Cabecalho: TPanel
+    Left = 0
+    Top = 0
+    Width = 872
+    Height = 81
+    Align = alTop
+    TabOrder = 0
+    object btn_novo: TSpeedButton
+      Left = 0
+      Top = 0
+      Width = 87
+      Height = 81
+      Caption = 'Novo'
+      OnClick = btn_novoClick
+    end
+    object btn_gravar: TSpeedButton
+      Left = 93
+      Top = 0
+      Width = 87
+      Height = 81
+      Caption = 'Gravar'
+      OnClick = btn_gravarClick
+    end
+    object btn_cancelar: TSpeedButton
+      Left = 186
+      Top = 0
+      Width = 87
+      Height = 81
+      Caption = 'Cancelar'
+      OnClick = btn_cancelarClick
+    end
+    object btn_excluir: TSpeedButton
+      Left = 279
+      Top = 0
+      Width = 87
+      Height = 81
+      Caption = 'Excluir'
+      OnClick = btn_excluirClick
+    end
+    object btn_sair: TSpeedButton
+      Left = 785
+      Top = 0
+      Width = 87
+      Height = 81
+      Caption = 'Sair'
+      OnClick = btn_sairClick
+    end
+  end
+  object FDQuery_cadastro: TFDQuery
+    Transaction = FDTransaction
+    UpdateObject = FDUpdateSQL_cadastro
+    Left = 800
+    Top = 304
+  end
+  object FDUpdateSQL_cadastro: TFDUpdateSQL
+    Connection = dm.FDConnection1
+    Left = 800
+    Top = 240
+  end
+  object FDTransaction: TFDTransaction
+    Connection = dm.FDConnection1
+    Left = 800
+    Top = 184
+  end
+end

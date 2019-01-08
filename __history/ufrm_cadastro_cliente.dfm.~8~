@@ -1,0 +1,210 @@
+inherited frm_cadastro_cliente: Tfrm_cadastro_cliente
+  Caption = 'Cadastro Clientes'
+  ClientHeight = 487
+  Visible = True
+  ExplicitHeight = 516
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel [0]
+    Left = 8
+    Top = 87
+    Width = 69
+    Height = 13
+    Caption = 'CLIENTE_COD'
+    FocusControl = DBEdit1
+  end
+  object Label2: TLabel [1]
+    Left = 156
+    Top = 87
+    Width = 73
+    Height = 13
+    Caption = 'CLIENTE_DESC'
+    FocusControl = DBEdit2
+  end
+  object Label3: TLabel [2]
+    Left = 156
+    Top = 136
+    Width = 67
+    Height = 13
+    Caption = 'CLIENTE_END'
+    FocusControl = DBEdit3
+  end
+  object Label4: TLabel [3]
+    Left = 8
+    Top = 136
+    Width = 66
+    Height = 13
+    Caption = 'CLIENTE_CEP'
+    FocusControl = DBEdit4
+  end
+  object Label5: TLabel [4]
+    Left = 287
+    Top = 192
+    Width = 86
+    Height = 13
+    Caption = 'CLIENTE_BAIRRO'
+    FocusControl = DBEdit5
+  end
+  object Label6: TLabel [5]
+    Left = 8
+    Top = 192
+    Width = 85
+    Height = 13
+    Caption = 'CLIENTE_CIDADE'
+    FocusControl = DBEdit6
+  end
+  object Label7: TLabel [6]
+    Left = 8
+    Top = 248
+    Width = 74
+    Height = 13
+    Caption = 'CLIENTE_FONE'
+    FocusControl = DBEdit7
+  end
+  object Label8: TLabel [7]
+    Left = 560
+    Top = 87
+    Width = 66
+    Height = 13
+    Caption = 'CLIENTE_CPF'
+    FocusControl = DBEdit8
+  end
+  object Label9: TLabel [8]
+    Left = 8
+    Top = 304
+    Width = 77
+    Height = 13
+    Caption = 'CLIENTE_EMAIL'
+    FocusControl = DBEdit9
+  end
+  object DBEdit1: TDBEdit [10]
+    Left = 8
+    Top = 103
+    Width = 134
+    Height = 21
+    DataField = 'CLIENTE_COD'
+    DataSource = DataSource_cadastro
+    TabOrder = 1
+  end
+  object DBEdit2: TDBEdit [11]
+    Left = 156
+    Top = 103
+    Width = 381
+    Height = 21
+    DataField = 'CLIENTE_DESC'
+    DataSource = DataSource_cadastro
+    TabOrder = 2
+  end
+  object DBEdit3: TDBEdit [12]
+    Left = 156
+    Top = 152
+    Width = 381
+    Height = 21
+    DataField = 'CLIENTE_END'
+    DataSource = DataSource_cadastro
+    TabOrder = 3
+  end
+  object DBEdit4: TDBEdit [13]
+    Left = 8
+    Top = 152
+    Width = 108
+    Height = 21
+    DataField = 'CLIENTE_CEP'
+    DataSource = DataSource_cadastro
+    TabOrder = 4
+  end
+  object DBEdit5: TDBEdit [14]
+    Left = 287
+    Top = 208
+    Width = 264
+    Height = 21
+    DataField = 'CLIENTE_BAIRRO'
+    DataSource = DataSource_cadastro
+    TabOrder = 5
+  end
+  object DBEdit6: TDBEdit [15]
+    Left = 8
+    Top = 208
+    Width = 264
+    Height = 21
+    DataField = 'CLIENTE_CIDADE'
+    DataSource = DataSource_cadastro
+    TabOrder = 6
+  end
+  object DBEdit7: TDBEdit [16]
+    Left = 8
+    Top = 264
+    Width = 134
+    Height = 21
+    DataField = 'CLIENTE_FONE'
+    DataSource = DataSource_cadastro
+    TabOrder = 7
+  end
+  object DBEdit8: TDBEdit [17]
+    Left = 560
+    Top = 103
+    Width = 160
+    Height = 21
+    DataField = 'CLIENTE_CPF'
+    DataSource = DataSource_cadastro
+    TabOrder = 8
+  end
+  object DBEdit9: TDBEdit [18]
+    Left = 8
+    Top = 320
+    Width = 524
+    Height = 21
+    DataField = 'CLIENTE_EMAIL'
+    DataSource = DataSource_cadastro
+    TabOrder = 9
+  end
+  inherited FDQuery_cadastro: TFDQuery
+    UpdateOptions.AutoIncFields = ''
+    SQL.Strings = (
+      'select * from clientes')
+    object FDQuery_cadastroCLIENTE_COD: TIntegerField
+      AutoGenerateValue = arAutoInc
+      FieldName = 'CLIENTE_COD'
+      Origin = 'CLIENTE_COD'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+    end
+    object FDQuery_cadastroCLIENTE_DESC: TStringField
+      FieldName = 'CLIENTE_DESC'
+      Origin = 'CLIENTE_DESC'
+      Size = 30
+    end
+    object FDQuery_cadastroCLIENTE_END: TStringField
+      FieldName = 'CLIENTE_END'
+      Origin = 'CLIENTE_END'
+      Size = 40
+    end
+    object FDQuery_cadastroCLIENTE_BAIRRO: TStringField
+      FieldName = 'CLIENTE_BAIRRO'
+      Origin = 'CLIENTE_BAIRRO'
+    end
+    object FDQuery_cadastroCLIENTE_CIDADE: TStringField
+      FieldName = 'CLIENTE_CIDADE'
+      Origin = 'CLIENTE_CIDADE'
+    end
+    object FDQuery_cadastroCLIENTE_FONE: TStringField
+      FieldName = 'CLIENTE_FONE'
+      Origin = 'CLIENTE_FONE'
+      Size = 10
+    end
+    object FDQuery_cadastroCLIENTE_CPF: TStringField
+      FieldName = 'CLIENTE_CPF'
+      Origin = 'CLIENTE_CPF'
+      Size = 12
+    end
+    object FDQuery_cadastroCLIENTE_EMAIL: TStringField
+      FieldName = 'CLIENTE_EMAIL'
+      Origin = 'CLIENTE_EMAIL'
+      Size = 40
+    end
+    object FDQuery_cadastroCLIENTE_CEP: TStringField
+      FieldName = 'CLIENTE_CEP'
+      Origin = 'CLIENTE_CEP'
+      Size = 8
+    end
+  end
+end

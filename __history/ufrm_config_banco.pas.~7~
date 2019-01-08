@@ -1,0 +1,59 @@
+unit ufrm_config_banco;
+
+interface
+
+uses
+    Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+    System.Classes, Vcl.Graphics,
+    Vcl.Controls, Vcl.Forms, Vcl.Dialogs, unt_biblioteca, Vcl.StdCtrls,
+    Vcl.Imaging.pngimage, Vcl.ExtCtrls;
+
+type
+    Tfrm_config_banco = class(TForm)
+        Image1: TImage;
+        Label1: TLabel;
+        edt_local: TEdit;
+        opn_pastas: TOpenDialog;
+        Button1: TButton;
+    procedure Button1Click(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    private
+        { Private declarations }
+        procedure configura;
+    public
+        { Public declarations }
+    end;
+
+var
+    frm_config_banco: Tfrm_config_banco;
+
+implementation
+
+{$R *.dfm}
+
+procedure Tfrm_config_banco.Button1Click(Sender: TObject);
+begin
+  configura
+end;
+
+procedure Tfrm_config_banco.configura;
+var
+    vFileName: string;
+begin
+    if opn_pastas.Execute then
+    begin
+        edt_local.Text := opn_pastas.FileName;
+        vFileName := ExtractFilePath(Application.ExeName) ;
+        setValorINI(vFileName, 'CONFIGURAÇAO', 'LOCAL_DB', edt_local.Text);
+        ShowMessage('Pronto!');
+        Self.Close;
+    end;
+end;
+
+procedure Tfrm_config_banco.FormClose(Sender: TObject;
+  var Action: TCloseAction);
+begin
+  Application.Terminate;
+end;
+
+end.

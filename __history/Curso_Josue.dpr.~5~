@@ -1,0 +1,19 @@
+program Curso_Josue;
+
+uses
+  Vcl.Forms,
+  unt_principal in 'unt_principal.pas' {Form1},
+  unt_DM in 'unt_DM.pas' {dm: TDataModule},
+  unt_biblioteca in 'unt_biblioteca.pas',
+  ufrm_config_banco in 'ufrm_config_banco.pas' {frm_config_banco};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(Tdm, dm);
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(Tfrm_config_banco, frm_config_banco);
+  Application.Run;
+end.

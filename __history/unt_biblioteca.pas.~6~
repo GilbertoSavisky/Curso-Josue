@@ -1,0 +1,17 @@
+unit unt_biblioteca;
+
+interface
+
+uses IniFiles, System.IniFiles;
+procedure setValorINI(pLocal, pSessao, pSubSessao: String; pValor: String);
+
+implementation
+
+procedure setValorINI(pLocal, pSessao, pSubSessao: String; pValor: String);
+var
+vArquivo TIniFile;
+begin
+
+end;
+
+end.

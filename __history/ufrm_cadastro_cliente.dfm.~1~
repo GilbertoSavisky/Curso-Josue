@@ -1,0 +1,5 @@
+inherited frm_cadastro_pai1: Tfrm_cadastro_pai1
+  Caption = 'frm_cadastro_pai1'
+  PixelsPerInch = 96
+  TextHeight = 13
+end
